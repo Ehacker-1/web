@@ -1,93 +1,111 @@
-<html>
-<head>
-<meta charset="UTF-8">
-<style type="text/css">
-body {
-    background: linear-gradient(45deg,deepskyblue,black);
-}
-body {
-    font-family: "Helvetica Neue",
-	Arial,
-	"Hiragino Kaku Gothic ProN",
-	"Hiragino Sans",
-	Meiryo,
-	sans-serif;
-}
-html, body { margin: 0; text-align: center; padding-top: 50px; }
-  .menu_btn {
-    /* 表示位置(固定:右上) */
-    position: fixed;
-    top:  20px;
-    right: 20px;
-
-    /* 開いたメニューより前面に表示する */
-    z-index: 1000;
-
-    /* ボタンのデザイン */
-    padding: 20px 40px;
-    color:       #Cyan;
-    font-size:   15px;
-    font-weight: bold;
-    border: 2px solid #Cyan;
-    border-radius: 15px;
-    background: #FFFFFF;
-
-    /* カーソルの形を変える */
-    cursor: pointer;
-  }
-    .menu {
-      display: none;
-      width: 100%;
-      background: #191970;
-      position: fixed;
-      top: 0;
-      z-index:999;
-    } 
-</style>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<title>Earth Community</title>
-</head>
+<!DOCTYPE HTML>
+<html lang="ja" class="no-js">
 <!--
-EEEEEEEEEEE
-EEEEEEEEEEE
-EEEE
-EEEE
-EEEEEEEEEEE
-EEEEEEEEEEE
-EEEE
-EEEE
-EEEEEEEEEEE
-EEEEEEEEEEE  A R T H
-
-Hi! Welcome
+███████╗░█████╗░██████╗░████████╗██╗░░██╗  ██████╗░░█████╗░░██╗░░░░░░░██╗███████╗██████╗░
+██╔════╝██╔══██╗██╔══██╗╚══██╔══╝██║░░██║  ██╔══██╗██╔══██╗░██║░░██╗░░██║██╔════╝██╔══██╗
+█████╗░░███████║██████╔╝░░░██║░░░███████║  ██████╔╝██║░░██║░╚██╗████╗██╔╝█████╗░░██████╔╝
+██╔══╝░░██╔══██║██╔══██╗░░░██║░░░██╔══██║  ██╔═══╝░██║░░██║░░████╔═████║░██╔══╝░░██╔══██╗
+███████╗██║░░██║██║░░██║░░░██║░░░██║░░██║  ██║░░░░░╚█████╔╝░░╚██╔╝░╚██╔╝░███████╗██║░░██║
+╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝  ╚═╝░░░░░░╚════╝░░░░╚═╝░░░╚═╝░░╚══════╝╚═╝░░╚═╝
 -->
+<head>
+<meta charset="utf-8">
+<title>EARTH POWER</title>
+<style type="text/css">
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #191970;
+}
+li {
+	float: left;
+	border-right: 1px solid #bbbbbb;
+}
+li:last-child {
+	border-right: none;
+}
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li a:hover:not(.active) {
+	background-color: #000000;
+}
+.active {
+	background-color: #191970;
+}
+</style>
+</head>
 <body>
-  <div id="wrapper">
-    <div class="menu_btn" class="hover">Menu</div>
-    <div class="menu">
-      <h1>MENU</h1>
-      <a href="index.html" style="text-decoration:none;" class="hover"><font size="4"><font color="White"><b>TOP</b></a></font></font> &nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="download.html" style="text-decoration:none;" class="hover"><font size="4"><font color="White"><b>SHOP</b></a></font></font> &nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="Discord.html" style="text-decoration:none;" class="hover"><font size="4"><font color="White"><b>JOIN DISCORD</b></a></font></font> &nbsp;&nbsp;&nbsp;&nbsp;
-	  <a href="chat.html" style="text-decoration:none;" class="hover"><font size="4"><font color="White"><b>CHAT</b></a></font></font><br><br> &nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="About.html" style="text-decoration:none;" class="hover"><font size="4"><font color="White"><b>ABOUT</b></a></font></font><br><br>
-    </div><!-- menu -->
-  </div><!-- wrapper -->
-<script>
-  $('.menu_btn').click(function() {
-    $('.menu').animate({ height: 'toggle' }, 'slow');
-  }); 
-</script> 
-<!--ここから本題(?)-->
-<br><br><br><br><font size="7"><font color="White"><b>Welcome!</b></font></font><br><br>
-<font size="5"><font color="White"><b>ようこそ！僕のサイトへ！<br>
-このサイトは、僕(イー)が作ったサイトです。<br><br></font></font>
-<font color="White"><font size="6">イーって誰?</font><br><br>
-<font color="White"><font size="5">ハッキングや、チートの動画を出しているYoutuberです。<br>
-よかったらチャンネル登録もよろしくお願いします。<br>
-このサイトで何をしていくかというと、<br>
-目標などはありませんが、チャット(掲示板)や、ファイルなどを配布する場にしたいです。<br><br>
-それでは楽しんでね！Enjoy!!<br><br><br><br><br></font></font></font>
-<font color="White"><font size="7">TOP</font></font><br><br><br>
+<div style="background:#000000;padding:10px;border-radius: 5px;border: 2px solid #191970;">
+<center>
+<img src="Earth icon.png" alt="100" width="100" height="100">
+</center>
+</div>
+<body bgcolor="#141414"><br>
+<center>
+<ul>
+	<li><a class="active" href="index.html">Home</a></li>
+	<li><a href="#news">Blog</a></li>
+	<li><a href="target.html">Target</a></li>
+	<li><a href="#contact">Tool</a></li>
+	<li><a href="#contact">Chat</a></li>
+</ul>
+</center>
+<Marquee><font size="4"><font color="#191970"><b>Earth Power</b></font></font></Marquee>
+</div>
+<div style="background:#191970;">
+<center>
+<font size="5"><font color="White">!Welcome!</font></font>
+</center>
+</div>
+<div style="background:#222222;"><br>
+<center><font size="3"><font color="White">Hi, you can get what you wouldn't normally get on this site. It's a dreamy site.<br>
+ The administrator is me. I also do Youtube.<br>
+ Please register if you like. So enjoy this site! Also, please do not spread this site. We are not responsible.</font></font>
+<br><br>
+</center>
+<div style="background:#191970;">
+<center>
+<font size="5"><font color="White">How to become an Earth creator?</font></font>
+</center>
+</div>
+<center><br>
+<font size="3"><font color="White">Enter my discord and send me a DM! , But it's not easy, you have to test. That is very important.</font></font><br><br><br>
+</center></div>
+<div style="background:#9966ff;">
+<center>
+<font size="5"><font color="White">Official SNS</font></font>
+</center>
+</div>
+<div style="background:#191970;">
+<center>
+<font size="5"><font color="White">Discord</font></font>
+</center>
+</div>
+<div style="background:#222222;"><br>
+<center>
+<iframe src="https://discord.com/widget?id=777514195762806825&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe><br><br>
+<div style="background:#191970;">
+<center>
+<font size="5"><font color="White">Youtube</font></font>
+</center></div>
+<div style="background:#222222;"><br><br>
+<center>
+<a href="https://www.youtube.com/channel/UCyxKqMqF25dWGzQAfL-dU2g"><img src="myyoutube.jpg"></a></br>
+</center>
+</div>
+<div style="background:#000000;"><br><br><br>
+<right>
+<font size="2"><font color="White">earth power 2021～</font></font>
+</right><br><br><br>
+</div>
+</center>
 </body>
 </html>
+
